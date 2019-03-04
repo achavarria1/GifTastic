@@ -17,12 +17,12 @@
     margin-bottom: 1%;
   }
   
-  figure {
+  figure{
     display: inline-block;
     margin: 1% !important;
     padding: 1% !important;
-    border: 1px solid #cccccc;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #f7ecec;
+    box-shadow: 0 6px 10px 0 rgba(16, 241, 129, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
   }
   
   img {
@@ -31,16 +31,16 @@
   }
   
   .card-panel {
-    background-color: #FFFAF0;
+    background-color: rgb(252, 251, 250);
   }
   
   button {
     margin: 1%;
   }
   
-  input {
-    border: 3px dashed #cccccc;
-  }
+  /* input {
+    border: 3px dashed #131212;
+  } */
   
   @media screen and (max-width: 640px) {
     #gifHolder figure {

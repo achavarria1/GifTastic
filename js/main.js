@@ -55,10 +55,11 @@ function addButtonEventListener() {
         var figure = $("<figure>");
         figure.attr("class", "card-panel hoverable");
 
-        
         var figcaption1 = $("<figcaption>");
 
         var figRating = response.data[i].rating;
+        
+
         
         figcaption1.html("RATING : " + figRating);
 
