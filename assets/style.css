@@ -33,14 +33,14 @@
   .card-panel {
     background-color: rgb(252, 251, 250);
   }
+
+  input{
+    right: 2950px;
+  }
   
   button {
     margin: 1%;
   }
-  
-  /* input {
-    border: 3px dashed #131212;
-  } */
   
   @media screen and (max-width: 640px) {
     #gifHolder figure {

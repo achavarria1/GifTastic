@@ -7,7 +7,7 @@ function makeButtons() {
     var button = $("<button>");
 
     button.text(topics[i])
-      .attr("class", "z-depth-3 waves-effect waves-light btn-small");
+      .attr("class", "btn-small");
 
     $("#buttonHolder").append(button);
   }
@@ -23,7 +23,7 @@ function createUserButtons() {
       var newButton = $("<button>");
       var newButtonText = $("#show").val();
       newButton.text(newButtonText)
-               .attr("class", "z-depth-3 waves-effect waves-light btn-small");
+               .attr("class", "btn-small");
       if (topics.includes(newButtonText)) {
         return null;
       } else {
