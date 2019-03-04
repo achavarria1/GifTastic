@@ -15,13 +15,13 @@ function createButtons() {
 
 function createUserButtons() {
 
-  $("#addShow").on("click", function() {
+  $("#newShow").on("click", function() {
     event.preventDefault();
-    if ($("#showOne").val() == "") {
+    if ($("#show").val() == "") {
       return null;
     } else {
       var newButton = $("<button>");
-      var newButtonText = $("#showOne").val();
+      var newButtonText = $("#show").val();
       newButton.text(newButtonText)
                .attr("class", "z-depth-3 waves-effect waves-light btn-small");
       if (topics.includes(newButtonText)) {
@@ -111,7 +111,9 @@ function gifAnimation() {
     }
   });
 }
-g
+
+
+
 function init() {
   createButtons();
   addButtonEventListener();
