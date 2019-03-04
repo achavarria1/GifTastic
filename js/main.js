@@ -112,31 +112,9 @@ function gifAnimation() {
   });
 }
 
-// function createFavGif() {
-//   $("#gifHolder figure i").on("click", function() {
-//     var clickedHeart = $(this);
-//     var clickedGifFigure = clickedHeart.parent();
-//     clickedGifFigure.clone().appendTo("#favourites");
-
-//     $("#favourites figure i").html("delete")
-//                              .addClass("trashIcon");
-
-//     deleteFavGif();
-//   });
-// }
-
-// function deleteFavGif() {
-//   $("#favourites figure i").on("click", function() {
-//     var clickedTrash = $(this);
-//     var clickedTrashFigure = clickedTrash.parent();
-
-//     clickedTrashFigure.remove();
-//   });
-// }
-
 function init() {
   createButtons();
   addButtonEventListener();
-  // createUserButtons();
+  createUserButtons();
 }
 init();
