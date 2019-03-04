@@ -9,7 +9,7 @@ function makeButtons() {
     button.text(topics[i])
       .attr("class", "btn-small");
 
-    $("#buttonHolder").append(button);
+    $("#buttonSection").append(button);
   }
 }
 
@@ -28,7 +28,7 @@ function createUserButtons() {
         return null;
       } else {
         topics.push(newButtonText);
-        $("#buttonHolder").append(newButton);
+        $("#buttonSection").append(newButton);
       }
 
     }
@@ -38,9 +38,9 @@ function createUserButtons() {
 
 function addButtonEventListener() {
 
-  $(document).on("click", "#buttonHolder button", function() {
+  $(document).on("click", "#buttonSection button", function() {
 
-    $("#gifHolder").empty();
+    $("#gifSection").empty();
     var buttonText = $(this).text();
     var qurl = "https://api.giphy.com/v1/gifs/search?api_key=" + API_KEY + "&q=" + buttonText + "&limit=10&offset=0&rating=G&lang=en";
 
@@ -77,7 +77,7 @@ function addButtonEventListener() {
         figure.append(image);
         figure.append(figcaption1);
 
-        $("#gifHolder").append(figure);
+        $("#gifSection").append(figure);
       }
 
       gifAnimation();

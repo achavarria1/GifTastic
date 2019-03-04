@@ -33,29 +33,25 @@
   .card-panel {
     background-color: rgb(252, 251, 250);
   }
-
-  input{
-    right: 2950px;
-  }
-  
+ 
   button {
     margin: 1%;
   }
   
   @media screen and (max-width: 640px) {
-    #gifHolder figure {
+    #gifSection figure {
       width: 80%;
     }
   }
   
   @media screen and (min-width: 760px) {
-    #gifHolder figure {
+    #gifSection figure {
       width: 40%;
     }
   }
   
   @media screen and (min-width: 980px) {
-    #gifHolder figure {
+    #gifSection figure {
       width: 30%;
     }
   }
