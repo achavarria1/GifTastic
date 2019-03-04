@@ -1,7 +1,7 @@
 var API_KEY = "bNO1MXrOy52NRwJE5u90Q5ObUMoh4GIl";
 var topics = ["mr robot", "suits", "game of thrones", "narcos", "silicon valley", "the sopranos", "stranger things", "bojack horseman"];
 
-function createButtons() {
+function makeButtons() {
 
   for (var i = 0; i < topics.length; i++) {
     var button = $("<button>");
@@ -55,18 +55,12 @@ function addButtonEventListener() {
         var figure = $("<figure>");
         figure.attr("class", "card-panel hoverable");
 
-        // var heartIcon = $("<i>");
-        // heartIcon.attr("class", "small material-icons emptyHeart")
-        //          .html("favorite");
-
+        
         var figcaption1 = $("<figcaption>");
-        var figcaption2 = $("<figcaption>");
 
         var figRating = response.data[i].rating;
-        var figTitle = response.data[i].title;
-
-        figcaption1.html("TITLE" + "<br>" + figTitle);
-        figcaption2.html("RATING : " + figRating);
+        
+        figcaption1.html("RATING : " + figRating);
 
         var stillImageSrc = response.data[i].images.original_still.url;
         var animateImageSrc = response.data[i].images.original.url;
@@ -77,10 +71,10 @@ function addButtonEventListener() {
                               .attr("data-animate", animateImageSrc)
                               .attr("class", "responsive-img");
 
-        // figure.append(heartIcon);
-        figure.append(figcaption1);
+        
+        
         figure.append(image);
-        figure.append(figcaption2);
+        figure.append(figcaption1);
 
         $("#gifHolder").append(figure);
       }
@@ -115,7 +109,7 @@ function gifAnimation() {
 
 
 function init() {
-  createButtons();
+  makeButtons();
   addButtonEventListener();
   createUserButtons();
 }
