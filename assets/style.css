@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    text-align: center;
+    margin: 0px;
+    background: gray;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-size: 16px;
+  }
+  
+  p {
+    color: #47476b;
+    font-family: "Comic Sans MS", Helvetica, monospace;
+    margin-bottom: 1%;
+  }
+  
+  figure {
+    display: inline-block;
+    margin: 1% !important;
+    padding: 1% !important;
+    border: 1px solid #cccccc;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  img {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .card-panel {
+    background-color: #FFFAF0;
+  }
+  
+  button {
+    margin: 1%;
+  }
+  
+  input {
+    border: 3px dashed #cccccc;
+  }
+  
+  @media screen and (max-width: 640px) {
+    #gifHolder figure {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (min-width: 760px) {
+    #gifHolder figure {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (min-width: 980px) {
+    #gifHolder figure {
+      width: 30%;
+    }
+  }
