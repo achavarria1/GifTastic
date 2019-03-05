@@ -52,8 +52,8 @@ function addButtonEventListener() {
 
       for (var i = 0; i < response.data.length; i++) {
 
-        var figure = $("<figure>");
-        figure.attr("class", "card-panel hoverable");
+        var card = $("<card>");
+        card.attr("class", "card-panel hoverable");
 
         var figcaption1 = $("<figcaption>");
 
@@ -74,10 +74,10 @@ function addButtonEventListener() {
 
         
         
-        figure.append(image);
-        figure.append(figcaption1);
+        card.append(image);
+        card.append(figcaption1);
 
-        $("#gifSection").append(figure);
+        $("#gifSection").append(card);
       }
 
       gifAnimation();
